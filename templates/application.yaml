@@ -13,7 +13,7 @@ spec:
   destination:
     namespace: {{ default "argocd" .namespace }}
     server: {{ default "https://kubernetes.default.svc" .clusterUrl }}
-  project: {{ default "default" $.Values.argocd.project }}
+  project: {{ default "default" .project }}
   source:
     path: {{ default "." .path }}
     repoURL: {{ .repoUrl }}
