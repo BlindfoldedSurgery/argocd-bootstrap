@@ -20,9 +20,9 @@ spec:
     targetRevision: {{ default "HEAD" .targetRevision }}
     {{- if or .values .valuesFile .chart }}
     helm:
-      {{- if .valuesFile }}
-      valuesFiles:
-      - "{{ .valuesFile }}"
+      {{- if .valueFiles }}
+      valueFiles:
+{{ toYaml .valueFiles | indent 6 }}
       {{- end }}
       {{- if .values }}
       values: |-
