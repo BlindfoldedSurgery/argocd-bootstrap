@@ -1,0 +1,6 @@
+argocd: {}
+
+apps:
+  - name: data
+    repoUrl: https://github.com/woog-life/data
+    project: wooglife
