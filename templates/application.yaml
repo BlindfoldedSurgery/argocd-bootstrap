@@ -4,7 +4,7 @@ apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
   name: {{ .name }}
-  namespace: {{ default "argocd" $.Values.argocd.namespace }}
+  namespace: {{ default "argocd" .namespace }}
   {{- if or (not (hasKey . "deleteCascade")) (.deleteCascade) }}
   finalizers:
     - resources-finalizer.argocd.argoproj.io
