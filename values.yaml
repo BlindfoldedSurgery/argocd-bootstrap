@@ -2,5 +2,6 @@ argocd: {}
 
 apps:
   - name: data
+    namespace: wooglife
     repoUrl: https://github.com/woog-life/data
     project: wooglife
