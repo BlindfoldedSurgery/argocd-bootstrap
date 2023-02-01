@@ -4,3 +4,9 @@ apps:
   - name: data
     repoUrl: https://github.com/woog-life/data
     project: wooglife
+  - name: namespaces
+    repoUrl: https://github.com/torbencarstens/namespaces
+    targetRevision: master
+  - name: sealed-secrets
+    repoUrl: https://github.com/torbencarstens/sealed-secrets
+    targetRevision: master
