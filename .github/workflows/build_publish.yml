@@ -10,10 +10,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - uses: WyriHaximus/github-action-helm3@v2
+      - uses: WyriHaximus/github-action-helm3@v3
         with:
           exec: helm lint
-      - uses: WyriHaximus/github-action-helm3@v2
+      - uses: WyriHaximus/github-action-helm3@v3
         with:
           exec: helm lint --strict
 
@@ -23,7 +23,7 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - name: install helm chart
-        uses: WyriHaximus/github-action-helm3@v2
+        uses: WyriHaximus/github-action-helm3@v3
         with:
           exec: helm upgrade argocd-bootstrap . --install --namespace=argocd --atomic
           kubeconfig: ${{ secrets.KUBECONFIG_RAW }}
