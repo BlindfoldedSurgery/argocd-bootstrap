@@ -5,11 +5,6 @@ apps:
     repoUrl: https://github.com/woog-life/data
     project: wooglife
     namespace: wooglife
-  - name: namespaces
-    repoUrl: https://github.com/torbencarstens/namespaces
-    targetRevision: master
-    project: mgmt
-    namespace: mgmt
   - name: sealed-secrets
     repoUrl: https://github.com/torbencarstens/sealed-secrets
     targetRevision: master
