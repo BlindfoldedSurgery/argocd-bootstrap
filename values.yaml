@@ -53,3 +53,9 @@ apps:
     project: mgmt
     namespace: longhorn-system
     syncWave: 6
+  - name: rancher
+    repoUrl: https://github.com/torbencarstens/rancher.git
+    targetRevision: master
+    project: mgmt
+    namespace: cattle-system
+    syncWave: 7
