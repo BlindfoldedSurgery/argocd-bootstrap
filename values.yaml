@@ -14,7 +14,7 @@ apps:
     repoUrl: https://github.com/torbencarstens/argocd-projects.git
     targetRevision: master
   - name: rbac
-    repoUrl: https://github.com/torbencarstens/argocd-projects.git
+    repoUrl: https://github.com/torbencarstens/rbac.git
     targetRevision: master
   - name: argocd
     repoUrl: https://github.com/torbencarstens/argocd.git
