@@ -4,29 +4,46 @@ apps:
   - name: data
     repoUrl: https://github.com/woog-life/data
     project: wooglife
+    namespace: wooglife
   - name: namespaces
     repoUrl: https://github.com/torbencarstens/namespaces
     targetRevision: master
+    project: mgmt
+    namespace: mgmt
   - name: sealed-secrets
     repoUrl: https://github.com/torbencarstens/sealed-secrets
     targetRevision: master
+    project: mgmt
+    namespace: mgmt
   - name: argocd-projects
     repoUrl: https://github.com/torbencarstens/argocd-projects.git
     targetRevision: master
+    project: mgmt
+    namespace: mgmt
   - name: rbac
     repoUrl: https://github.com/torbencarstens/rbac.git
     targetRevision: master
+    project: mgmt
+    namespace: mgmt
   - name: argocd
     repoUrl: https://github.com/torbencarstens/argocd.git
     targetRevision: master
+    project: mgmt
+    namespace: mgmt
   - name: argocd-bootstrap
     repoUrl: https://github.com/openalcoholics/argocd-bootstrap.git
     targetRevision: master
+    project: argocd
+    namespace: argocd
   - name: ingress-controller
     repoUrl: https://github.com/torbencarstens/ingress-controller.git
     targetRevision: master
+    project: mgmt
+    namespace: mgmt
     namespace: mgmt
   - name: cert-manager
     repoUrl: https://github.com/torbencarstens/cert-manager.git
     targetRevision: master
     namespace: cert-manager
+    project: mgmt
+    namespace: mgmt
