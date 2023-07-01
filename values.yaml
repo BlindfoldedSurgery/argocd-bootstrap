@@ -19,3 +19,6 @@ apps:
   - name: argocd
     repoUrl: https://github.com/torbencarstens/argocd.git
     targetRevision: master
+  - name: argocd-bootstrap
+    repoUrl: https://github.com/openalcoholics/argocd-bootstrap.git
+    targetRevision: master
