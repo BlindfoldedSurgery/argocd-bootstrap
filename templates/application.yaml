@@ -34,9 +34,9 @@ spec:
     {{- end }}
   syncPolicy:
     automated:
+      {{- if .prune }}
       # argocd has problems when default values are passed explicitly
-      {{- if .prune -}}
       prune: true
-      {{- end -}}
+      {{- end }}
       selfHeal: true
 {{ end }}
