@@ -29,4 +29,4 @@ apps:
   - name: cert-manager
     repoUrl: https://github.com/torbencarstens/cert-manager.git
     targetRevision: master
-    namespace: mgmt
+    namespace: cert-manager
