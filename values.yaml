@@ -15,39 +15,46 @@ apps:
     targetRevision: master
     project: mgmt
     namespace: mgmt
+    syncWave: 4
   - name: argocd-projects
     repoUrl: https://github.com/torbencarstens/argocd-projects.git
     targetRevision: master
     project: mgmt
     namespace: mgmt
+    syncWave: 1
   - name: rbac
     repoUrl: https://github.com/torbencarstens/rbac.git
     targetRevision: master
     project: mgmt
     namespace: mgmt
+    syncWave: 0
   - name: argocd
     repoUrl: https://github.com/torbencarstens/argocd.git
     targetRevision: master
     project: mgmt
     namespace: mgmt
+    syncWave: 5
   - name: argocd-bootstrap
     repoUrl: https://github.com/openalcoholics/argocd-bootstrap.git
     targetRevision: master
     project: argocd
     namespace: argocd
+    syncWave: 5
   - name: ingress-controller
     repoUrl: https://github.com/torbencarstens/ingress-controller.git
     targetRevision: master
     project: mgmt
     namespace: mgmt
-    namespace: mgmt
+    syncWave: 2
   - name: cert-manager
     repoUrl: https://github.com/torbencarstens/cert-manager.git
     targetRevision: master
     namespace: cert-manager
     project: mgmt
+    syncWave: 3
   - name: longhorn
     repoUrl: https://github.com/torbencarstens/longhorn.git
     targetRevision: master
     project: mgmt
     namespace: longhorn-system
+    syncWave: 6
