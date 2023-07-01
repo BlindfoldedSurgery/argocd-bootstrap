@@ -23,6 +23,6 @@ apps:
     repoUrl: https://github.com/openalcoholics/argocd-bootstrap.git
     targetRevision: master
   - name: ingress-controller
-    repoUrl: https://github.com/openalcoholics/ingress-controller.git
+    repoUrl: https://github.com/torbencarstens/ingress-controller.git
     targetRevision: master
     namespace: mgmt
