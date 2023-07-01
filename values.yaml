@@ -26,3 +26,7 @@ apps:
     repoUrl: https://github.com/torbencarstens/ingress-controller.git
     targetRevision: master
     namespace: mgmt
+  - name: cert-manager
+    repoUrl: https://github.com/torbencarstens/cert-manager.git
+    targetRevision: master
+    namespace: mgmt
