@@ -46,7 +46,6 @@ apps:
     targetRevision: master
     namespace: cert-manager
     project: mgmt
-    namespace: mgmt
   - name: longhorn
     repoUrl: https://github.com/torbencarstens/longhorn.git
     targetRevision: master
