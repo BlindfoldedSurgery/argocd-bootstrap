@@ -15,7 +15,7 @@ spec:
   destination:
     namespace: {{ default "mgmt" .namespace }}
     server: {{ default "https://kubernetes.default.svc" .clusterUrl }}
-  project: {{ default "mgmt" .project }}
+  project: {{ default "default" .project }}
   source:
     path: {{ default "." .path }}
     repoURL: {{ .repoUrl }}
