@@ -55,3 +55,9 @@ apps:
     project: mgmt
     namespace: cattle-system
     syncWave: 7
+  # doesn't need a specific sync-wave since this is pre-installed by ansible
+  - name: external-secrets
+    repoUrl: https://github.com/torbencarstens/external-secrets.git
+    targetRevision: master
+    project: mgmt
+    namespace: mgmt
