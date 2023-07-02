@@ -61,3 +61,8 @@ apps:
     targetRevision: master
     project: mgmt
     namespace: mgmt
+  - name: postgres-operator
+    repoUrl: https://github.com/OpenAlcoholics/postgres-operator.git
+    targetRevision: master
+    project: mgmt
+    namespace: postgres-operator
