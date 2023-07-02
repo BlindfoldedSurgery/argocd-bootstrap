@@ -4,6 +4,8 @@ apps:
   - name: argocd-projects
     repoUrl: https://github.com/torbencarstens/argocd-projects.git
     targetRevision: master
+    namespace: argocd
+    project: argocd
     syncWave: 1
   - name: rbac
     repoUrl: https://github.com/torbencarstens/rbac.git
