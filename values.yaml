@@ -43,10 +43,10 @@ apps:
     targetRevision: master
     namespace: cattle-system
     syncWave: 7
-  # doesn't need a specific sync-wave since this is pre-installed by ansible
   - name: external-secrets
     repoUrl: https://github.com/torbencarstens/external-secrets.git
     targetRevision: master
+    syncWave: -1
   - name: postgres-operator
     repoUrl: https://github.com/OpenAlcoholics/postgres-operator.git
     targetRevision: master
