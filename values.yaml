@@ -17,6 +17,7 @@ apps:
     repoUrl: https://github.com/torbencarstens/argocd.git
     targetRevision: master
     syncWave: 5
+  # is this even useful?
   - name: argocd-bootstrap
     repoUrl: https://github.com/openalcoholics/argocd-bootstrap.git
     targetRevision: master
@@ -50,3 +51,11 @@ apps:
     repoUrl: https://github.com/OpenAlcoholics/postgres-operator.git
     targetRevision: master
     namespace: postgres-operator
+  - name: istio
+    repoUrl: https://github.com/torbencarstens/istio.git
+    targetRevision: master
+    namespace: istio-system
+  - name: jaeger
+    repoUrl: https://github.com/torbencarstens/jaeger.git
+    targetRevision: master
+    namespace: observability
