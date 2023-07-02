@@ -13,9 +13,9 @@ metadata:
     argocd.argoproj.io/sync-wave: "{{ .syncWave | default 100 }}"
 spec:
   destination:
-    namespace: {{ default "argocd" .namespace }}
+    namespace: {{ default "mgmt" .namespace }}
     server: {{ default "https://kubernetes.default.svc" .clusterUrl }}
-  project: {{ default "default" .project }}
+  project: {{ default "mgmt" .project }}
   source:
     path: {{ default "." .path }}
     repoURL: {{ .repoUrl }}

@@ -4,26 +4,18 @@ apps:
   - name: sealed-secrets
     repoUrl: https://github.com/torbencarstens/sealed-secrets
     targetRevision: master
-    project: mgmt
-    namespace: mgmt
     syncWave: 4
   - name: argocd-projects
     repoUrl: https://github.com/torbencarstens/argocd-projects.git
     targetRevision: master
-    project: mgmt
-    namespace: mgmt
     syncWave: 1
   - name: rbac
     repoUrl: https://github.com/torbencarstens/rbac.git
     targetRevision: master
-    project: mgmt
-    namespace: mgmt
     syncWave: 0
   - name: argocd
     repoUrl: https://github.com/torbencarstens/argocd.git
     targetRevision: master
-    project: mgmt
-    namespace: mgmt
     syncWave: 5
   - name: argocd-bootstrap
     repoUrl: https://github.com/openalcoholics/argocd-bootstrap.git
@@ -34,35 +26,27 @@ apps:
   - name: ingress-controller
     repoUrl: https://github.com/torbencarstens/ingress-controller.git
     targetRevision: master
-    project: mgmt
-    namespace: mgmt
     syncWave: 2
   - name: cert-manager
     repoUrl: https://github.com/torbencarstens/cert-manager.git
     targetRevision: master
     namespace: cert-manager
-    project: mgmt
     syncWave: 3
   - name: longhorn
     repoUrl: https://github.com/torbencarstens/longhorn.git
     targetRevision: master
-    project: mgmt
     namespace: longhorn-system
     syncWave: 6
   - name: rancher
     repoUrl: https://github.com/torbencarstens/rancher.git
     targetRevision: master
-    project: mgmt
     namespace: cattle-system
     syncWave: 7
   # doesn't need a specific sync-wave since this is pre-installed by ansible
   - name: external-secrets
     repoUrl: https://github.com/torbencarstens/external-secrets.git
     targetRevision: master
-    project: mgmt
-    namespace: mgmt
   - name: postgres-operator
     repoUrl: https://github.com/OpenAlcoholics/postgres-operator.git
     targetRevision: master
-    project: mgmt
     namespace: postgres-operator
