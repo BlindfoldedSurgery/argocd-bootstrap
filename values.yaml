@@ -59,3 +59,11 @@ apps:
     repoUrl: https://github.com/torbencarstens/jaeger.git
     targetRevision: master
     namespace: observability
+  - name: rancher-monitoring
+    repoUrl: https://github.com/torbencarstens/rancher-monitoring.git
+    targetRevision: master
+    namespace: monitoring
+  - name: rancher-monitoring-crd
+    repoUrl: https://charts.rancher.io
+    targetRevision: 102.0.1+up40.1.2
+    namespace: monitoring
