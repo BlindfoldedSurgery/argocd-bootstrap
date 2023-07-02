@@ -1,10 +1,6 @@
 argocd: {}
 
 apps:
-  - name: sealed-secrets
-    repoUrl: https://github.com/torbencarstens/sealed-secrets
-    targetRevision: master
-    syncWave: 4
   - name: argocd-projects
     repoUrl: https://github.com/torbencarstens/argocd-projects.git
     targetRevision: master
