@@ -16,6 +16,9 @@ spec:
     namespace: {{ default "mgmt" .namespace }}
     server: {{ default "https://kubernetes.default.svc" .clusterUrl }}
   project: {{ default "default" .project }}
+  {{- if .ignoreDifferences }}
+  ignoreDifferences: {{ toYaml .ignoreDifferences | nindent 2 }}
+  {{- end }}
   source:
     path: {{ default "." .path }}
     repoURL: {{ .repoUrl }}

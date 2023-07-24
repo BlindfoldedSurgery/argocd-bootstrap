@@ -55,6 +55,12 @@ apps:
     repoUrl: https://github.com/torbencarstens/istio.git
     targetRevision: master
     namespace: istio-system
+    ignoreDifferences:
+    - group: admissionregistration.k8s.io
+      kind: ValidatingWebhookConfiguration
+      name: istiod-default-validator
+      jqPathExpressions:
+        - .webhooks[].matchPolicy
   - name: jaeger
     repoUrl: https://github.com/torbencarstens/jaeger.git
     targetRevision: master
