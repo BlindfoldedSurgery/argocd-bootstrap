@@ -61,6 +61,11 @@ apps:
       name: istiod-default-validator
       jqPathExpressions:
         - .webhooks[].matchPolicy
+    - group: admissionregistration.k8s.io
+      kind: ValidatingWebhookConfiguration
+      name: istiod-default-validator
+      jqPathExpressions:
+        - .webhooks[].failurePolicy
   - name: jaeger
     repoUrl: https://github.com/torbencarstens/jaeger.git
     targetRevision: master
