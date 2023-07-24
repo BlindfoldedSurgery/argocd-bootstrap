@@ -49,7 +49,7 @@ apps:
     syncWave: -1
   - name: postgres-operator
     repoUrl: https://github.com/OpenAlcoholics/postgres-operator.git
-    targetRevision: master
+    targetRevision: argocd
     namespace: postgres-operator
   - name: istio
     repoUrl: https://github.com/torbencarstens/istio.git
