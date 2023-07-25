@@ -51,25 +51,6 @@ apps:
     repoUrl: https://github.com/OpenAlcoholics/postgres-operator.git
     targetRevision: argocd
     namespace: postgres-operator
-  - name: istio
-    repoUrl: https://github.com/torbencarstens/istio.git
-    targetRevision: master
-    namespace: istio-system
-    ignoreDifferences:
-    - group: admissionregistration.k8s.io
-      kind: ValidatingWebhookConfiguration
-      name: istiod-default-validator
-      jqPathExpressions:
-        - .webhooks[].matchPolicy
-    - group: admissionregistration.k8s.io
-      kind: ValidatingWebhookConfiguration
-      name: istiod-default-validator
-      jqPathExpressions:
-        - .webhooks[].failurePolicy
-  - name: jaeger
-    repoUrl: https://github.com/torbencarstens/jaeger.git
-    targetRevision: master
-    namespace: observability
   - name: kubernetes-mgmt
     repoUrl: https://github.com/torbencarstens/kubernetes-mgmt.git
     targetRevision: master
