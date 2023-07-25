@@ -70,3 +70,6 @@ apps:
     repoUrl: https://github.com/torbencarstens/jaeger.git
     targetRevision: master
     namespace: observability
+  - name: kubernetes-mgmt
+    repoUrl: https://github.com/torbencarstens/kubernetes-mgmt.git
+    targetRevision: master
