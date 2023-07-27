@@ -19,7 +19,7 @@ apps:
     namespace: argocd
   # is this even useful?
   - name: argocd-bootstrap
-    repoUrl: https://github.com/openalcoholics/argocd-bootstrap.git
+    repoUrl: https://github.com/BlindfoldedSurgery/argocd-bootstrap.git
     targetRevision: master
     project: argocd
     namespace: argocd
@@ -48,7 +48,7 @@ apps:
     targetRevision: master
     syncWave: -1
   - name: postgres-operator
-    repoUrl: https://github.com/OpenAlcoholics/postgres-operator.git
+    repoUrl: https://github.com/BlindfoldedSurgery/postgres-operator.git
     targetRevision: argocd
     namespace: postgres-operator
   - name: kubernetes-mgmt
