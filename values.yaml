@@ -54,9 +54,6 @@ apps:
   - name: kubernetes-mgmt
     repoUrl: https://github.com/torbencarstens/kubernetes-mgmt.git
     targetRevision: master
-  - name: kubernetes-mgmt
-    repoUrl: https://github.com/torbencarstens/kubernetes-mgmt.git
-    targetRevision: master
   - name: song.abfahrt.io
     repoUrl: https://github.com/BlindfoldedSurgery/song.abfahrt.io
     targetRevision: master
