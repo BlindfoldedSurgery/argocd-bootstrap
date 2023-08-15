@@ -49,7 +49,7 @@ apps:
     syncWave: -1
   - name: postgres-operator
     repoUrl: https://github.com/BlindfoldedSurgery/postgres-operator.git
-    targetRevision: argocd
+    targetRevision: master
     namespace: postgres-operator
   - name: kubernetes-mgmt
     repoUrl: https://github.com/torbencarstens/kubernetes-mgmt.git
