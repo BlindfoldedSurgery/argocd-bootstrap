@@ -63,3 +63,5 @@ apps:
   - name: datadog
     repoUrl: https://github.com/BlindfoldedSurgery/datadog
     targetRevision: main
+    namespace: datadog
+
