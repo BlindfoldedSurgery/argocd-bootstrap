@@ -2,64 +2,63 @@ argocd: {}
 
 apps:
   - name: argocd-projects
-    repoUrl: https://github.com/torbencarstens/argocd-projects.git
-    targetRevision: master
+    repoUrl: https://github.com/BlindfoldedSurgery/argocd-projects.git
+    targetRevision: main
     namespace: argocd
     project: argocd
     syncWave: 1
   - name: rbac
-    repoUrl: https://github.com/torbencarstens/rbac.git
-    targetRevision: master
+    repoUrl: https://github.com/BlindfoldedSurgery/rbac.git
+    targetRevision: main
     syncWave: 0
   - name: argocd
-    repoUrl: https://github.com/torbencarstens/argocd.git
-    targetRevision: master
+    repoUrl: https://github.com/BlindfoldedSurgery/argocd.git
+    targetRevision: main
     syncWave: 5
     project: argocd
     namespace: argocd
-  # is this even useful?
   - name: argocd-bootstrap
     repoUrl: https://github.com/BlindfoldedSurgery/argocd-bootstrap.git
-    targetRevision: master
+    targetRevision: main
     project: argocd
     namespace: argocd
     syncWave: 5
   - name: ingress-controller
-    repoUrl: https://github.com/torbencarstens/ingress-controller.git
-    targetRevision: master
+    repoUrl: https://github.com/BlindfoldedSurgery/ingress-controller.git
+    targetRevision: main
     syncWave: 2
   - name: cert-manager
-    repoUrl: https://github.com/torbencarstens/cert-manager.git
-    targetRevision: master
+    repoUrl: https://github.com/BlindfoldedSurgery/cert-manager.git
+    targetRevision: main
     namespace: cert-manager
     syncWave: 3
   - name: longhorn
-    repoUrl: https://github.com/torbencarstens/longhorn.git
-    targetRevision: master
+    repoUrl: https://github.com/BlindfoldedSurgery/longhorn.git
+    targetRevision: main
     namespace: longhorn-system
     syncWave: 6
   - name: rancher
-    repoUrl: https://github.com/torbencarstens/rancher.git
-    targetRevision: master
+    repoUrl: https://github.com/BlindfoldedSurgery/rancher.git
+    targetRevision: main
     namespace: cattle-system
     syncWave: 7
   - name: external-secrets
-    repoUrl: https://github.com/torbencarstens/external-secrets.git
-    targetRevision: master
+    repoUrl: https://github.com/BlindfoldedSurgery/external-secrets.git
+    targetRevision: main
     syncWave: -1
   - name: postgres-operator
     repoUrl: https://github.com/BlindfoldedSurgery/postgres-operator.git
-    targetRevision: master
+    targetRevision: main
     namespace: postgres-operator
   - name: kubernetes-mgmt
-    repoUrl: https://github.com/torbencarstens/kubernetes-mgmt.git
-    targetRevision: master
+    repoUrl: https://github.com/BlindfoldedSurgery/kubernetes-mgmt.git
+    targetRevision: main
   - name: song.abfahrt.io
     repoUrl: https://github.com/BlindfoldedSurgery/song.abfahrt.io
-    targetRevision: master
+    targetRevision: main
   - name: blindfolded.surgery
     repoUrl: https://github.com/BlindfoldedSurgery/blindfolded.surgery
-    targetRevision: master
+    targetRevision: main
   - name: datadog
     repoUrl: https://github.com/BlindfoldedSurgery/datadog
     targetRevision: main
