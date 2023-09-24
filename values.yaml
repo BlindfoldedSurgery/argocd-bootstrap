@@ -20,7 +20,7 @@ apps:
   # is this even useful?
   - name: argocd-bootstrap
     repoUrl: https://github.com/BlindfoldedSurgery/argocd-bootstrap.git
-    targetRevision: master
+    targetRevision: main
     project: argocd
     namespace: argocd
     syncWave: 5
