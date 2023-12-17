@@ -59,3 +59,6 @@ apps:
   - name: blindfolded.surgery
     repoUrl: https://github.com/BlindfoldedSurgery/blindfolded.surgery
     targetRevision: main
+  - name: rancher-monitoring
+    repoUrl: https://github.com/BlindfoldedSurgery/rancher-monitoring
+    targetRevision: main
