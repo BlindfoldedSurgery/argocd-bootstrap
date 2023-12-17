@@ -62,3 +62,4 @@ apps:
   - name: rancher-monitoring
     repoUrl: https://github.com/BlindfoldedSurgery/rancher-monitoring
     targetRevision: main
+    namespace: monitoring
